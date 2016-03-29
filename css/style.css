@@ -1,0 +1,18 @@
+.nav {
+  background-color: #2289bf;
+  height: 57px;
+}
+.nav i {
+  display: block;
+  background: url("images/task_1_9_1.png") top left no-repeat;
+}
+.nav .brand {
+  float: left;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+.nav .brand i {
+  width: 36px;
+  height: 36px;
+  background-position: -10px -77px;
+}
