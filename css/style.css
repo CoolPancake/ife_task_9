@@ -2,17 +2,37 @@
   background-color: #2289bf;
   height: 57px;
 }
-.nav i {
-  display: block;
-  background: url("images/task_1_9_1.png") top left no-repeat;
-}
 .nav .brand {
   float: left;
   margin-top: 10px;
   margin-left: 50px;
 }
 .nav .brand i {
+  display: block;
+  background: url("images/task_1_9_1.png") top left no-repeat;
   width: 36px;
   height: 36px;
   background-position: -10px -77px;
+}
+.nav .search {
+  float: left;
+  margin-left: 818px;
+  margin-top: 14px;
+  background-color: #ffffff;
+}
+.nav .search .sear_logo {
+  background: url("images/task_1_9_1.png") top left no-repeat;
+  width: 17px;
+  height: 17px;
+  background-position: -10px -123px;
+  margin-top: 5px;
+  border-image-source: initial;
+  border-image-slice: initial;
+  border-image-width: initial;
+  border-image-outset: initial;
+  border-image-repeat: initial;
+}
+.nav .search .sear_text {
+  width: 313px;
+  height: 28px;
 }
