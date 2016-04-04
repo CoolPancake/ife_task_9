@@ -15,24 +15,49 @@
   background-position: -10px -77px;
 }
 .nav .search {
-  float: left;
-  margin-left: 818px;
+  height: 28px;
+  float: right;
+  margin-right: 92px;
   margin-top: 14px;
-  background-color: #ffffff;
 }
-.nav .search .sear_logo {
+.nav .search .search_bar {
+  float: left;
+}
+.nav .search .search_bar form {
+  background-color: #ffffff;
+  width: 313px;
+  border-radius: 14px;
+}
+.nav .search .search_bar form .sear_logo {
   background: url("images/task_1_9_1.png") top left no-repeat;
   width: 17px;
   height: 17px;
   background-position: -10px -123px;
-  margin-top: 5px;
-  border-image-source: initial;
-  border-image-slice: initial;
-  border-image-width: initial;
-  border-image-outset: initial;
-  border-image-repeat: initial;
+  margin: 0;
+  border: 0;
+  vertical-align: -5px;
+  margin-left: 18px;
 }
-.nav .search .sear_text {
-  width: 313px;
+.nav .search .search_bar form .sear_text {
+  border: 0;
   height: 28px;
+  width: 80%;
+}
+.nav .search .login {
+  float: left;
+  margin-left: 21px;
+  margin-top: 6px;
+}
+.nav .search .login i {
+  display: inline-block;
+  background: url("images/task_1_9_1.png") top left no-repeat;
+  width: 15px;
+  height: 16px;
+  background-position: -37px -123px;
+  vertical-align: middle;
+}
+.nav .search .login span {
+  color: #ffffff;
+  margin-left: 2px;
+  vertical-align: middle;
 }
