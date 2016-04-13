@@ -1,4 +1,25 @@
-.nav{
+/* 默认设置 */
+@bgc: #388ac1;
+.btn_primary{
+
+	color: #ffffff;
+	background-color: @bgc;
+	border-width: 0;
+	padding: 5px 12px;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	&:hover{
+		background-color: darken(@bgc, 5%);
+	}
+	&:active{
+		background-color: darken(@bgc, 15%);
+	}
+	
+
+}
+/* 默认设置 */
+.header{
 	background-color: #2289bf;
 	height: 57px;
 	
@@ -17,7 +38,7 @@
 		float: right;
 		margin-right: 92px;
 		margin-top: 14px;
-		.search_bar{
+		.search_bar{	
 			float: left;
 			form{
 				background-color: #ffffff;
@@ -52,6 +73,303 @@
 				color: #ffffff;
 				margin-left: 2px;
 				vertical-align: middle;
+				font-size: 12px;
+			}
+		}
+	}
+}
+/* 左侧导航 */
+nav{
+	float: left;
+	width: 20%;
+	height: 1213px;
+	background-color: #2a2e3d;
+		.user-info{
+		float: left;
+		margin-top: 17px;
+		margin-left: 45px;
+		a{	
+			.name{
+				font-size: 16px;
+				color: #ffffff;
+				margin-left: 16px;
+				vertical-align: middle;
+			}
+			.portrait{
+				display: inline-block;
+				background:url("images/task_1_9_1.png") top left no-repeat;
+				width:57px; height:57px; background-position:-10px -10px;
+				vertical-align: middle;
+			}	
+		}
+	}
+	.user_extra{
+		clear: left;
+		float: left;
+		margin-top: 20px;
+		text-align: center;
+		width: 216px;
+		
+		
+		hr{
+			width: 2px;
+			height: 29px;
+			background-color: #313545;
+			border: 0;
+			margin: 0 30px;
+			float: left;
+			display: inline-block;
+		}
+		a{	
+			float: left;
+			.fans{
+				float: left;
+
+			}
+			.collect{
+			margin-left: 60px;
+			
+		}
+			div{
+				span{
+				display: block;
+				color: #6D8095;
+				font-size: 12px;
+			}
+			}
+		}
+	}
+	.navigation{
+		clear: left;
+		float: left;
+		width: 100%;
+		margin-top: 18px;
+		.ul_nav{
+			padding-top: 13px;
+			padding-left: 45px;
+			>li{
+				margin: 20px 0;
+				a{
+					color: #6e8096;
+				}
+				i{
+					display: inline-block;
+					background:url("images/task_1_9_1.png") top left no-repeat;
+					vertical-align: -1px;
+				}
+				.n6{
+						width:12px; height:12px; background-position:-10px -150px;
+						margin-right: 12px;
+					}
+				.n3{
+					width:11px; height:12px; background-position:-32px -150px;
+					margin-right: 12px;
+				}
+				.n1{
+					width:12px; height:12px; background-position:-10px -172px;
+					margin-right: 12px;
+				}
+				.n2,.n5,.n4{
+					width:12px; height:11px; background-position:-52px -172px;
+					margin-right: 12px;
+				}
+				.ul_nav_1{
+					position: relative;
+					left: 12px;
+					li{
+						margin: 20px 0;
+					}	
+						.n1_1{
+							display: inline-block;
+							background:url("images/task_1_9_1.png") top left no-repeat;
+							width:12px; height:12px; background-position:-53px -150px;
+							margin-right: 5px;
+					}
+					.ul_nav_1_1{
+						position: relative;
+						left: 12px;
+						i{
+							display: inline-block;
+							background:url("images/task_1_9_1.png") top left no-repeat;
+							width:11px; height:12px; background-position:-56px -77px;
+							margin-right: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+.right_content{
+	float: left;
+	width: 80%;
+	height: 1213px;
+	background-color: #eeeeed;
+	.m_title{
+		background-color: #ffffff; 
+		height:30;
+		color: #aaaaa9;
+		padding: 10px 30px;
+		a{	
+			color: #aaaaa9;
+			&:last-child{
+				color: #2189bf;
+			}
+		}
+	}
+	.l-comtent-box{
+		width: 900px;
+		margin: 20px auto;
+		.m-search{
+			background-color: #ffffff;
+			height: 86px;
+			.detail_item{margin-top: 20px;margin-left: 50px;}
+			.query_item{margin-top: 20px;margin-left: 20px;}
+			.man_item{margin-top: 20px;margin-left: 30px;}
+			>div{
+				float: left;
+				position: relative;
+				.sn{width: 70px;}
+				.bg{width: 120px;}
+				.tra_icon{
+					position: absolute;
+					left: 176px;
+					top: 6px;
+					i{	
+						display: block;
+						background:url("images/task_1_9_2.png") top left no-repeat;
+						width:27px; height:38px; background-position:-10px -10px;
+					}
+				}
+				span{
+					margin-left: 13px;
+					margin-right: 13px;
+					color: #aaaaa9;
+				}
+				}
+				.man_item1{
+					position: absolute;
+					top: 30px;
+
+				}
+				.detail_item1{
+					position: absolute;
+					top: 30px;
+				}
+				select{
+					height: 20px;
+					line-height: 20px;
+					border-color: #ababab;
+				}
+
+			}
+			button{
+				float: left;
+				margin-top: 32px;
+				margin-left: 30px;
+			}
+		.m-histry{
+			height: 65px;
+			margin-top: 10px;
+			>div{
+				float: left;
+				height: 100%;
+				background-color: #ffffff;
+			}
+			.his_left{
+				width: 30px;
+				margin-right: (900-110*7-30*2)/16px;
+				a{	
+					position: relative;
+					display: block;
+					width: 100%;
+					height: 100%;
+					color: #afafaf;
+					i{
+					position: absolute;
+					left: 25%;
+					top: 25%;
+					}
+				}
+			}
+			.his_right{
+				width: 30px;
+				margin-left: (900-110*7-30*2)/16px;
+				margin-right: (900-110*7-30*2)/16px;
+				a{	
+					position: relative;
+					display: block;
+					width: 100%;
+					height: 100%;
+					color: #afafaf;
+					i{
+					position: absolute;
+					right: 25%;
+					top: 25%;
+					}
+					}
+			}
+			.active::before{
+						content: "";
+						float: left;
+						height: 5px;
+						width: 100%;
+						background: #4388C9;
+
+						}
+			.num{
+				text-align: center;
+				width: 110px;
+				margin-right: (900-110*7-30*2)/16px;
+				margin-left: (900-110*7-30*2)/16px;
+				cursor: pointer;
+				&:hover::before{
+						content: "";
+						float: left;
+						height: 5px;
+						width: 100%;
+						background: #4388C9;
+
+						}
+				i{	
+					display: inline-block;
+					background:url("images/task_1_9_2.png") top left no-repeat;
+					width:11px; height:12px; background-position:-10px -100px;
+				}
+				time{
+					display: block;
+					margin-top: 12px;
+					font-size: 12px;
+					color: #323232;
+					}
+				span{
+					display: block;
+					margin-top: 3px;
+					font-size: 20px;
+					color: #ec6500;
+				}
+
+			}
+			.his_query{
+				width: 110px;
+				margin-left: (900-110*7-30*2)/16px;
+				text-align: center;
+				cursor: pointer;
+				div{
+					margin-top: 17px;
+				}
+					i{
+					display: inline-block;
+					background:url("images/task_1_9_2.png") top left no-repeat;
+					width:32px; height:32px; background-position:-10px -58px;
+					vertical-align: middle;
+					}
+					span{
+						margin-left: 5px;
+						color: #535353;
+						font-size: 12px;
+						vertical-align: middle;
+					}
 			}
 		}
 	}

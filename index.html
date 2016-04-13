@@ -5,20 +5,159 @@
 	<title>任务九：使用HTML/CSS实现一个复杂页面</title>
 	<link rel="stylesheet" type="text/css" href="css/reset.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
 <body>
-	<div class="nav">
+	<div class="header">
 		<div class="brand"><i></i></div>
 		<div class="search">
-		<div class="search_bar">
-			<form action="#" class="sear_form">
-				<input type="submit" class="sear_logo" value="">
-				<input type="text" class="sear_text">
-			</form></div>
-			<div class="login">
-				<i></i><span>登录</span>
+			<div class="search_bar">
+				<form action="#" class="sear_form">
+					<input type="submit" class="sear_logo" value="">
+					<input type="text" class="sear_text">
+				</form></div>
+				<div class="login">
+					<a href="#">
+						<i></i><span>登录</span>
+					</a>
+				</div>
 			</div>
 		</div>
-	</div>
-	</body>
-	</html>
+		<nav class="main-nav">
+			<div class="user-info">
+				<a href="#">
+					<i class="portrait"></i>
+					<span class="name">少女杀手</span>
+				</a>
+			</div>
+			<div class="user_extra">
+				<a href="#">
+					<div class="collect"><span>110</span><span>收藏</span></div>
+				</a>
+				<hr>
+				<a href="">
+					<div class="fans"><span>313</span><span>粉丝</span></div>
+				</a>
+			</div>
+			<div class="navigation">
+				<ul class="ul_nav">
+					<li><a href=""><i class="n1"></i>个人报表</a>
+						<ul class="ul_nav_1">
+							<li class="li_nav_1"><a href=""><i class="icon-angle-right icon-2x"></i><i class="n1_1"></i>文件一</a></li>
+							<li class="li_nav_2"><a href=""><i class="icon-angle-down icon-2x"></i><i class="n1_1"></i>文件二
+								<ul class="ul_nav_1_1">
+									<li class="li_nav_2_1"><a href=""><i class="n1_2_1"></i>文档一</a></li>
+									<li class="li_nav_2_2"><a href=""><i class="n1_2_2"></i>文档二</a></li>
+								</ul></a></li>
+								<li class="li_nav_3"><a href=""><i class="icon-angle-right icon-2x"></i><i class="n1_1"></i>文件三</a></li>
+							</ul>
+						</li>
+						<li><a href=""><i class="n2"></i>个人收藏</a></li>
+						<li><a href=""><i class="n3"></i>我的分享</a></li>
+						<li><a href=""><i class="n4"></i>图库</a></li>
+						<li><a href=""><i class="n5"></i>成长记录</a></li>
+						<li><a href=""><i class="n6"></i>账户</a></li>
+					</ul>
+				</div>
+			</nav>
+			<div class="right_content">
+				<div class="m_title">
+					<a href="#">C站</a>   /
+					<a href="#">个人报表</a>   /
+					<a href="#">文件一</a>   /
+					<a href="#">文档一</a>
+				</div>
+				<div class="l-comtent-box">
+					<div class="m-search">
+							<div class="query_item">
+								<span>查询项</span>
+								<select class="sn">
+									<option value="#">第一页</option>
+									<option value="#">第二页</option>
+									<option value="#">第三页</option>
+								</select>
+							</div>
+							<div class="man_item">
+							<a href="#" class="tra_icon"><i></i></a>
+								<div class="man_item2">
+								<span>买方</span>
+								<select class="bg">
+									<option value="">小A</option>
+								</select>
+
+								</div>
+								<div class="man_item1">
+								<span>卖方</span>
+								<select class="bg">
+									<option value="">小C</option>
+								</select>
+								</div>
+							</div>
+							<div class="detail_item">
+								<div class="detail_item2">
+								<span>日期</span>
+								<select class="bg">
+									<option value="">2016-04-01</option>
+								</select>
+								
+								<span>总耗时</span>
+								<select class="sn">
+									<option value="">8天</option>
+								</select></div>
+								<div class="detail_item1">
+								<span>人数</span>
+								<select class="sn">
+									<option value="">10人</option>
+								</select>
+								<span>成交项</span>
+								<select class="bg">
+									<option value="">10项</option>
+								</select>
+								</div>
+							</div>
+							<button class="btn_primary">搜索</button>
+					</div>
+					<div class="m-histry">
+						<div class="his_left">
+							<a href=""><i class="icon-angle-left icon-2x icon-large"></i></a>
+						</div>
+						<div class="num active">
+							<time>10:00	am</time>
+							<span><i></i>1200</span>
+						</div>
+						<div class="num">
+							<time>11:00	am</time>
+							<span><i></i>1300</span>
+						</div>
+						<div class="num">
+							<time>12:00	am</time>
+							<span><i></i>1200</span>
+						</div>	
+						<div class="num">
+							<time>01:00 pm</time>
+							<span><i></i>1400</span>
+						</div>
+						<div class="num">
+							<time>02:00 pm</time>
+							<span><i></i>1500</span>
+						</div>
+						<div class="num">
+							<time>03:00 pm</time>
+							<span><i></i>1800</span>
+						</div>
+						<div class="his_right">
+							<a href=""><i class="icon-angle-right icon-2x icon-large"></i></a>
+						</div>
+						<div class="his_query">
+							<div><i></i><span>历史查询</span></div>
+						</div>
+					</div>
+					<div class="m-numCount"></div>
+					<div class="l-info-about">
+						<div class="m-info p-tab"></div>
+						<div class="m-info p-msg"></div>
+					</div>
+				</div>
+			</div>
+		</body>
+		</html>

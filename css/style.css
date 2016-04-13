@@ -1,34 +1,51 @@
-.nav {
+/* 默认设置 */
+.btn_primary {
+  color: #ffffff;
+  background-color: #388ac1;
+  border-width: 0;
+  padding: 5px 12px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.btn_primary:hover {
+  background-color: #327cad;
+}
+.btn_primary:active {
+  background-color: #276086;
+}
+/* 默认设置 */
+.header {
   background-color: #2289bf;
   height: 57px;
 }
-.nav .brand {
+.header .brand {
   float: left;
   margin-top: 10px;
   margin-left: 50px;
 }
-.nav .brand i {
+.header .brand i {
   display: block;
   background: url("images/task_1_9_1.png") top left no-repeat;
   width: 36px;
   height: 36px;
   background-position: -10px -77px;
 }
-.nav .search {
+.header .search {
   height: 28px;
   float: right;
   margin-right: 92px;
   margin-top: 14px;
 }
-.nav .search .search_bar {
+.header .search .search_bar {
   float: left;
 }
-.nav .search .search_bar form {
+.header .search .search_bar form {
   background-color: #ffffff;
   width: 313px;
   border-radius: 14px;
 }
-.nav .search .search_bar form .sear_logo {
+.header .search .search_bar form .sear_logo {
   background: url("images/task_1_9_1.png") top left no-repeat;
   width: 17px;
   height: 17px;
@@ -38,17 +55,17 @@
   vertical-align: -5px;
   margin-left: 18px;
 }
-.nav .search .search_bar form .sear_text {
+.header .search .search_bar form .sear_text {
   border: 0;
   height: 28px;
   width: 80%;
 }
-.nav .search .login {
+.header .search .login {
   float: left;
   margin-left: 21px;
   margin-top: 6px;
 }
-.nav .search .login i {
+.header .search .login i {
   display: inline-block;
   background: url("images/task_1_9_1.png") top left no-repeat;
   width: 15px;
@@ -56,8 +73,327 @@
   background-position: -37px -123px;
   vertical-align: middle;
 }
-.nav .search .login span {
+.header .search .login span {
   color: #ffffff;
   margin-left: 2px;
+  vertical-align: middle;
+  font-size: 12px;
+}
+/* 左侧导航 */
+nav {
+  float: left;
+  width: 20%;
+  height: 1213px;
+  background-color: #2a2e3d;
+}
+nav .user-info {
+  float: left;
+  margin-top: 17px;
+  margin-left: 45px;
+}
+nav .user-info a .name {
+  font-size: 16px;
+  color: #ffffff;
+  margin-left: 16px;
+  vertical-align: middle;
+}
+nav .user-info a .portrait {
+  display: inline-block;
+  background: url("images/task_1_9_1.png") top left no-repeat;
+  width: 57px;
+  height: 57px;
+  background-position: -10px -10px;
+  vertical-align: middle;
+}
+nav .user_extra {
+  clear: left;
+  float: left;
+  margin-top: 20px;
+  text-align: center;
+  width: 216px;
+}
+nav .user_extra hr {
+  width: 2px;
+  height: 29px;
+  background-color: #313545;
+  border: 0;
+  margin: 0 30px;
+  float: left;
+  display: inline-block;
+}
+nav .user_extra a {
+  float: left;
+}
+nav .user_extra a .fans {
+  float: left;
+}
+nav .user_extra a .collect {
+  margin-left: 60px;
+}
+nav .user_extra a div span {
+  display: block;
+  color: #6D8095;
+  font-size: 12px;
+}
+nav .navigation {
+  clear: left;
+  float: left;
+  width: 100%;
+  margin-top: 18px;
+}
+nav .navigation .ul_nav {
+  padding-top: 13px;
+  padding-left: 45px;
+}
+nav .navigation .ul_nav > li {
+  margin: 20px 0;
+}
+nav .navigation .ul_nav > li a {
+  color: #6e8096;
+}
+nav .navigation .ul_nav > li i {
+  display: inline-block;
+  background: url("images/task_1_9_1.png") top left no-repeat;
+  vertical-align: -1px;
+}
+nav .navigation .ul_nav > li .n6 {
+  width: 12px;
+  height: 12px;
+  background-position: -10px -150px;
+  margin-right: 12px;
+}
+nav .navigation .ul_nav > li .n3 {
+  width: 11px;
+  height: 12px;
+  background-position: -32px -150px;
+  margin-right: 12px;
+}
+nav .navigation .ul_nav > li .n1 {
+  width: 12px;
+  height: 12px;
+  background-position: -10px -172px;
+  margin-right: 12px;
+}
+nav .navigation .ul_nav > li .n2,
+nav .navigation .ul_nav > li .n5,
+nav .navigation .ul_nav > li .n4 {
+  width: 12px;
+  height: 11px;
+  background-position: -52px -172px;
+  margin-right: 12px;
+}
+nav .navigation .ul_nav > li .ul_nav_1 {
+  position: relative;
+  left: 12px;
+}
+nav .navigation .ul_nav > li .ul_nav_1 li {
+  margin: 20px 0;
+}
+nav .navigation .ul_nav > li .ul_nav_1 .n1_1 {
+  display: inline-block;
+  background: url("images/task_1_9_1.png") top left no-repeat;
+  width: 12px;
+  height: 12px;
+  background-position: -53px -150px;
+  margin-right: 5px;
+}
+nav .navigation .ul_nav > li .ul_nav_1 .ul_nav_1_1 {
+  position: relative;
+  left: 12px;
+}
+nav .navigation .ul_nav > li .ul_nav_1 .ul_nav_1_1 i {
+  display: inline-block;
+  background: url("images/task_1_9_1.png") top left no-repeat;
+  width: 11px;
+  height: 12px;
+  background-position: -56px -77px;
+  margin-right: 5px;
+}
+.right_content {
+  float: left;
+  width: 80%;
+  height: 1213px;
+  background-color: #eeeeed;
+}
+.right_content .m_title {
+  background-color: #ffffff;
+  height: 30;
+  color: #aaaaa9;
+  padding: 10px 30px;
+}
+.right_content .m_title a {
+  color: #aaaaa9;
+}
+.right_content .m_title a:last-child {
+  color: #2189bf;
+}
+.right_content .l-comtent-box {
+  width: 900px;
+  margin: 20px auto;
+}
+.right_content .l-comtent-box .m-search {
+  background-color: #ffffff;
+  height: 86px;
+}
+.right_content .l-comtent-box .m-search .detail_item {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+.right_content .l-comtent-box .m-search .query_item {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.right_content .l-comtent-box .m-search .man_item {
+  margin-top: 20px;
+  margin-left: 30px;
+}
+.right_content .l-comtent-box .m-search > div {
+  float: left;
+  position: relative;
+}
+.right_content .l-comtent-box .m-search > div .sn {
+  width: 70px;
+}
+.right_content .l-comtent-box .m-search > div .bg {
+  width: 120px;
+}
+.right_content .l-comtent-box .m-search > div .tra_icon {
+  position: absolute;
+  left: 176px;
+  top: 6px;
+}
+.right_content .l-comtent-box .m-search > div .tra_icon i {
+  display: block;
+  background: url("images/task_1_9_2.png") top left no-repeat;
+  width: 27px;
+  height: 38px;
+  background-position: -10px -10px;
+}
+.right_content .l-comtent-box .m-search > div span {
+  margin-left: 13px;
+  margin-right: 13px;
+  color: #aaaaa9;
+}
+.right_content .l-comtent-box .m-search .man_item1 {
+  position: absolute;
+  top: 30px;
+}
+.right_content .l-comtent-box .m-search .detail_item1 {
+  position: absolute;
+  top: 30px;
+}
+.right_content .l-comtent-box .m-search select {
+  height: 20px;
+  line-height: 20px;
+  border-color: #ababab;
+}
+.right_content .l-comtent-box button {
+  float: left;
+  margin-top: 32px;
+  margin-left: 30px;
+}
+.right_content .l-comtent-box .m-histry {
+  height: 65px;
+  margin-top: 10px;
+}
+.right_content .l-comtent-box .m-histry > div {
+  float: left;
+  height: 100%;
+  background-color: #ffffff;
+}
+.right_content .l-comtent-box .m-histry .his_left {
+  width: 30px;
+  margin-right: 4.375px;
+}
+.right_content .l-comtent-box .m-histry .his_left a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #afafaf;
+}
+.right_content .l-comtent-box .m-histry .his_left a i {
+  position: absolute;
+  left: 25%;
+  top: 25%;
+}
+.right_content .l-comtent-box .m-histry .his_right {
+  width: 30px;
+  margin-left: 4.375px;
+  margin-right: 4.375px;
+}
+.right_content .l-comtent-box .m-histry .his_right a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: #afafaf;
+}
+.right_content .l-comtent-box .m-histry .his_right a i {
+  position: absolute;
+  right: 25%;
+  top: 25%;
+}
+.right_content .l-comtent-box .m-histry .active::before {
+  content: "";
+  float: left;
+  height: 5px;
+  width: 100%;
+  background: #4388C9;
+}
+.right_content .l-comtent-box .m-histry .num {
+  text-align: center;
+  width: 110px;
+  margin-right: 4.375px;
+  margin-left: 4.375px;
+  cursor: pointer;
+}
+.right_content .l-comtent-box .m-histry .num:hover::before {
+  content: "";
+  float: left;
+  height: 5px;
+  width: 100%;
+  background: #4388C9;
+}
+.right_content .l-comtent-box .m-histry .num i {
+  display: inline-block;
+  background: url("images/task_1_9_2.png") top left no-repeat;
+  width: 11px;
+  height: 12px;
+  background-position: -10px -100px;
+}
+.right_content .l-comtent-box .m-histry .num time {
+  display: block;
+  margin-top: 12px;
+  font-size: 12px;
+  color: #323232;
+}
+.right_content .l-comtent-box .m-histry .num span {
+  display: block;
+  margin-top: 3px;
+  font-size: 20px;
+  color: #ec6500;
+}
+.right_content .l-comtent-box .m-histry .his_query {
+  width: 110px;
+  margin-left: 4.375px;
+  text-align: center;
+  cursor: pointer;
+}
+.right_content .l-comtent-box .m-histry .his_query div {
+  margin-top: 17px;
+}
+.right_content .l-comtent-box .m-histry .his_query i {
+  display: inline-block;
+  background: url("images/task_1_9_2.png") top left no-repeat;
+  width: 32px;
+  height: 32px;
+  background-position: -10px -58px;
+  vertical-align: middle;
+}
+.right_content .l-comtent-box .m-histry .his_query span {
+  margin-left: 5px;
+  color: #535353;
+  font-size: 12px;
   vertical-align: middle;
 }
